@@ -6,7 +6,7 @@
 let my = {};
 
 function preload() {
-  my.version = '?v=1';
+  my.version = '?v=3';
   my.backgImgIndex = 0;
   my.backgImgs = [];
   my.panScale = 3;
