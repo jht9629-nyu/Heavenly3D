@@ -6,7 +6,7 @@
 let my = {};
 
 function preload() {
-  my.version = '?v=3';
+  my.version = '?v=4';
   my.backgImgIndex = 0;
   my.backgImgs = [];
   my.panScale = 3;
@@ -14,7 +14,7 @@ function preload() {
   let path = 'https://molab-itp.github.io/p5moLibrary/src/assets/';
   // let path = '../../assets';
   // on mobile device, switch to lower rez graphics
-  if (windowWidth <= 600) path = 'https://molab-itp.github.io/p5moLibrary/src/assets-lowrez';
+  if (windowWidth <= 600) path = 'https://molab-itp.github.io/p5moLibrary/src/assets-lowrez/';
   // if (windowWidth <= 600) path = '../../assets-lowrez';
   console.log('path', path);
 
