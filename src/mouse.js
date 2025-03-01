@@ -8,7 +8,7 @@ function mousePressed() {
   } else if (my.camBody.pointInside(mouseX, mouseY)) {
     setFocus(my.camBody);
   } else {
-    my.shiftTracking = 1;
+    my.mouseTracking = 1;
     my.panX0 = mouseX;
     my.panY0 = mouseY;
   }
@@ -20,7 +20,7 @@ function mouseDragged() {
   let inY = mouseY >= 0 && mouseY < height;
   let onCanvas = inX && inY;
   if (onCanvas) {
-    if (my.shiftTracking) {
+    if (my.mouseTracking) {
       my.panX += my.panX0 - mouseX;
       my.panY += my.panY0 - mouseY;
       my.panX0 = mouseX;
@@ -35,5 +35,5 @@ function mouseReleased() {
   //
   // console.log('mouseReleased');
   // my.mouseTracking = 0;
-  my.shiftTracking = 0;
+  my.mouseTracking = 0;
 }

@@ -12,10 +12,10 @@ function preload() {
   my.panScale = 3;
 
   let path = 'https://molab-itp.github.io/p5moLibrary/src/assets/';
-  // let path = '../../assets';
   // on mobile device, switch to lower rez graphics
-  if (windowWidth <= 600) path = 'https://molab-itp.github.io/p5moLibrary/src/assets-lowrez/';
-  // if (windowWidth <= 600) path = '../../assets-lowrez';
+  if (windowWidth <= 600) {
+    path = 'https://molab-itp.github.io/p5moLibrary/src/assets-lowrez/';
+  }
   console.log('path', path);
 
   my.earthImg = loadImage(path + 'world-ultra.jpg');
