@@ -8,7 +8,7 @@ let my = {};
 my.imageNames = ['The_Celestial_Zoo.png', 'Manju.jpg', 'sun.jpg', 'Da_Vinci.jpg', 'plenty.jpeg'];
 
 function preload() {
-  my.version = '?v=5';
+  my.version = '?v=6';
   my.backgImgIndex = 0;
   my.backgImgs = [];
   my.panScale = 3;

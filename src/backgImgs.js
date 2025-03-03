@@ -34,8 +34,9 @@ function nextBackgImg() {
   {
     let backgImg = my.backgImgs[my.backgImgIndex];
     if (!backgImg) return;
+    let name = my.imageNames[my.backgImgIndex];
     let { width, height } = backgImg;
-    console.log('nextBackgImg', my.backgImgIndex, '', 'width', width, 'height', height);
+    console.log('nextBackgImg', my.backgImgIndex, name, '', 'width', width, 'height', height);
   }
 }
 
