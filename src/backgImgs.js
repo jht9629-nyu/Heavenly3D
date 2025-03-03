@@ -31,6 +31,12 @@ function nextBackgImg() {
   if (my.backgImgs.length <= 0) return;
   my.backgImgIndex = (my.backgImgIndex + 1) % my.backgImgs.length;
   init_pan();
+  {
+    let backgImg = my.backgImgs[my.backgImgIndex];
+    if (!backgImg) return;
+    let { width, height } = backgImg;
+    console.log('nextBackgImg', my.backgImgIndex, '', 'width', width, 'height', height);
+  }
 }
 
 // image(img, x, y, [width], [height])

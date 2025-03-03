@@ -5,8 +5,10 @@
 
 let my = {};
 
+my.imageNames = ['The_Celestial_Zoo.png', 'Manju.jpg', 'sun.jpg', 'Da_Vinci.jpg', 'plenty.jpeg'];
+
 function preload() {
-  my.version = '?v=4';
+  my.version = '?v=5';
   my.backgImgIndex = 0;
   my.backgImgs = [];
   my.panScale = 3;
@@ -21,11 +23,14 @@ function preload() {
   my.earthImg = loadImage(path + 'world-ultra.jpg');
   my.moonImg = loadImage(path + 'moon.jpg');
   //
-  my.backgImgs.push(loadImage(path + 'The_Celestial_Zoo.png'));
-  my.backgImgs.push(loadImage(path + 'Manju.jpg'));
-  my.backgImgs.push(loadImage(path + 'sun.jpg'));
-  my.backgImgs.push(loadImage(path + 'Da_Vinci.jpg'));
-  my.backgImgs.push(loadImage(path + 'plenty.jpeg'));
+  // my.backgImgs.push(loadImage(path + 'The_Celestial_Zoo.png'));
+  // my.backgImgs.push(loadImage(path + 'Manju.jpg'));
+  // my.backgImgs.push(loadImage(path + 'sun.jpg'));
+  // my.backgImgs.push(loadImage(path + 'Da_Vinci.jpg'));
+  // my.backgImgs.push(loadImage(path + 'plenty.jpeg'));
+  for (let name of my.imageNames) {
+    my.backgImgs.push(loadImage(path + name));
+  }
 }
 
 function setup() {

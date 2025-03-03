@@ -1,6 +1,5 @@
 //
 function mousePressed() {
-  //
   if (my.earth.pointInside(mouseX, mouseY)) {
     setFocus(my.earth);
   } else if (my.body2.pointInside(mouseX, mouseY)) {
@@ -15,7 +14,6 @@ function mousePressed() {
 }
 
 function mouseDragged() {
-  //
   let inX = mouseX >= 0 && mouseX < width;
   let inY = mouseY >= 0 && mouseY < height;
   let onCanvas = inX && inY;
@@ -32,7 +30,6 @@ function mouseDragged() {
 }
 
 function mouseReleased() {
-  //
   // console.log('mouseReleased');
   // my.mouseTracking = 0;
   my.mouseTracking = 0;
