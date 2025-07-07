@@ -19,6 +19,7 @@ function preload() {
     path = 'https://molab-itp.github.io/p5moLibrary/src/assets-lowrez/';
   }
   console.log('path', path);
+  // https://molab-itp.github.io/p5moLibrary/src/assets/moon.jpg
 
   my.earthImg = loadImage(path + 'world-ultra.jpg');
   my.moonImg = loadImage(path + 'moon.jpg');
