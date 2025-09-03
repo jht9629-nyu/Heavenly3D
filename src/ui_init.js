@@ -4,7 +4,12 @@ function ui_init() {
   createSpan().id('id_angleX');
   createSpan().id('id_angleY');
   createSpan().id('id_angleZ');
+
+  let href = 'https://commons.wikimedia.org/wiki/File:The_Celestial_Zoo_infographic_wikimedia.png';
+  createA(href, ' 210 Astronomical Objects ', '_blank');
+
   createElement('br');
+
   createButton('up').mousePressed(function () {
     my.focusBody.setDir(dirUp);
   });
